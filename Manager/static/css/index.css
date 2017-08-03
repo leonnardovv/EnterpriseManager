@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body
+{
+width: 100%;
+margin: auto;
+}
+
+body{
+  background-color: #e9ecf3;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.introduction-header{
+  height: 80px;
+  width: 100%;
+  background-color: #3a3f52;
+  top: 0px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.introduction-header-inner{
+
+  margin: 0px auto;
+}
+
+.logo h3{
+  color: #fff;
+  float: left;
+  font-family: 'Sans PT', sans-serif;
+}
+
+.introduction-header-navbar{
+    float: right;
+    margin-right: 100px;
+}
+
+.introduction-header-navbar ul li{
+  display: inline;
+  list-style-type: none;
+  margin-left: 40px;
+}
+.introduction-header-navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+}
+
+.register-button{
+  background-color: #3a3f52 ;
+  color: #6cd2d6;
+  border: 1px solid;
+  border-color: #6cd2d6;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  font-family: 'Ubuntu', sans-serif;
+
+
+}
+.login-button {
+    background-color: #6cd2d6 ;
+    color: #3a3f52;
+    border: 1px solid #6cd2d6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+.index-page-container{
+  margin-top: 100px;
+}

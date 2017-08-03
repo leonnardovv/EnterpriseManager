@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if all_enterprises %}
+    <div class="enterprises-list">
+        <ul>
+          {% for enterprise in all_enterprises %}
+              <li><a href="/enterprises/{{ enterprise.id }}">{{ enterprise.name }}</a></li>
+          {% endfor %}
+
+        </ul>
+    </div>
+{% else %}
+    <h3>No Enterpreises Available</h3>
+{% endif %}
+{% endblock %}

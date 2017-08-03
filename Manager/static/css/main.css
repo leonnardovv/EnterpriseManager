@@ -1,0 +1,104 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body
+{
+width: 100%;
+margin: auto;
+}
+
+body{
+  background-color: #e9ecf3;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.header{
+  height: 80px;
+  width: 100%;
+  background-color: #3a3f52;
+  top: 0px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.header-inner{
+  width: 100%;
+  margin: 0px auto;
+}
+
+.logo h3{
+  color: #fff;
+}
+
+.page-container{
+  margin-top: 100px;
+}
+
+.sidebar{
+  height: 100%;
+  width: 200px;
+  background-color: #434a63;
+  position: fixed;
+  display: block;
+  z-index: 999;
+
+}
+
+.sidebar-inner{
+  height: 100%;
+  margin: 0px auto;
+}
+
+.sidebar .sidebar-inner .search-box .input-group{
+  border-bottom: 1px solid #435060;
+
+}
+
+.sidebar .sidebar-inner .search-box .input-group .form-control{
+  background-color: #434a63;
+  border: 0px;
+  height: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar-inner .sidebar-title a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.sidebar .sidebar-inner ul{
+  list-style-type: none;
+  padding: 0px 5px;
+}
+
+.sidebar .sidebar-inner ul li {
+
+}
+.sidebar .sidebar-inner ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Cairo', sans-serif;
+}
+.search-box{
+  margin: 5px auto;
+  width: 200px;
+  height: 50px;
+}
+
+.content{
+  margin-left: 220px;
+  background-color: #fff;
+}
+.enterprises-list ul li{
+  list-style-type: none;
+}
+.enterprises-list ul li a{
+  text-decoration: none;
+  color: #434a63;
+  font-family: 'Cairo', sans-serif;
+}

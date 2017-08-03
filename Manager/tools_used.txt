@@ -1,0 +1,25 @@
+The url() function is passed four arguments, two required: regex and view, and two optional: kwargs, and name. At this point, it’s worth reviewing what these arguments are for.
+
+url() argument: regex¶
+
+The term “regex” is a commonly used short form meaning “regular expression”, which is a syntax for matching patterns in strings, or in this case, url patterns. Django starts at the first regular expression and makes its way down the list, comparing the requested URL against each regular expression until it finds one that matches.
+
+Note that these regular expressions do not search GET and POST parameters, or the domain name. For example, in a request to https://www.example.com/myapp/, the URLconf will look for myapp/. In a request to https://www.example.com/myapp/?page=3, the URLconf will also look for myapp/.
+
+If you need help with regular expressions, see Wikipedia’s entry and the documentation of the re module. Also, the O’Reilly book “Mastering Regular Expressions” by Jeffrey Friedl is fantastic. In practice, however, you don’t need to be an expert on regular expressions, as you really only need to know how to capture simple patterns. In fact, complex regexes can have poor lookup performance, so you probably shouldn’t rely on the full power of regexes.
+
+Finally, a performance note: these regular expressions are compiled the first time the URLconf module is loaded. They’re super fast (as long as the lookups aren’t too complex as noted above).
+
+url() argument: view¶
+
+When Django finds a regular expression match, Django calls the specified view function, with an HttpRequest object as the first argument and any “captured” values from the regular expression as other arguments. If the regex uses simple captures, values are passed as positional arguments; if it uses named captures, values are passed as keyword arguments. We’ll give an example of this in a bit.
+
+url() argument: kwargs¶
+
+Arbitrary keyword arguments can be passed in a dictionary to the target view. We aren’t going to use this feature of Django in the tutorial.
+
+url() argument: name¶
+
+Naming your URL lets you refer to it unambiguously from elsewhere in Django, especially from within templates. This powerful feature allows you to make global changes to the URL patterns of your project while only touching a single file.
+
+When you’re comfortable with the basic request and response flow, read part 2 of this tutorial to start working with the database.

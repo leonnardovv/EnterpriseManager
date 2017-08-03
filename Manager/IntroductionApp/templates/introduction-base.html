@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <link rel="stylesheet" href='{% static "css/index.css" %}'>
+    <link rel="stylesheet" href='{% static "css/font-awesome.min.css" %}'>
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Open+Sans|Raleway|Ubuntu" rel="stylesheet">
+  </head>
+
+  <body>
+    {% include 'includes/introduction-header.html' %}
+        <div class="index-page-container">
+
+            {% block index %}
+
+            {% endblock %}
+        </div>
+
+  </body>
+</html>
