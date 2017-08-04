@@ -30,12 +30,15 @@ body{
 .logo h3{
   color: #fff;
   float: left;
+  margin-left:20px;
+  margin-top:20px;
   font-family: 'Sans PT', sans-serif;
 }
 
 .introduction-header-navbar{
     float: right;
     margin-right: 100px;
+    margin-top:10px;
 }
 
 .introduction-header-navbar ul li{
