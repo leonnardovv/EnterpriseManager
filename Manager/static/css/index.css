@@ -18,9 +18,8 @@ body{
   height: 80px;
   width: 100%;
   background-color: #3a3f52;
-  top: 0px;
-  position: fixed;
-  z-index: 1000;
+  top: 10px;
+
 }
 
 .introduction-header-inner{
@@ -83,4 +82,29 @@ body{
 
 .index-page-container{
   margin-top: 100px;
+}
+
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
 }
